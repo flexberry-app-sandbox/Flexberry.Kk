@@ -1,0 +1,100 @@
+﻿{
+  "name": "IISKkТЧПерерасчетаКУ",
+  "modelName": "i-i-s-kk-т-ч-перерасчета-к-у",
+  "className": "ТЧПерерасчетаКУ",
+  "nameSpace": "IIS.Kk",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "месяцНачис",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номерЛицСчет",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "суммаКоррек",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "суммаНачис",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "типНачис",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "услуга",
+      "type": "i-i-s-kk-комм-услуги",
+      "flexberryType": "КоммУслуги",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "базаДанныхЛС",
+      "relatedTo": "i-i-s-kk-база-данных-л-с",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "перерасчетКУ",
+      "relatedTo": "i-i-s-kk-перерасчет-к-у",
+      "inverse": "тЧПерерасчетаКУ"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧПерерасчетаКУE",
+      "modelName": "i-i-s-kk-т-ч-перерасчета-к-у",
+      "attrs": [
+        {
+          "name": "услуга",
+          "caption": "Услуга",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

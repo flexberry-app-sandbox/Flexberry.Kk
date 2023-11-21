@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kk-перерасчет-к-у-e",
+  "editForm": "i-i-s-kk-перерасчет-к-у-e",
+  "external": false,
+  "caption": "Перерасчет КУ",
+  "name": "IISKkПерерасчетКУL",
+  "className": "ПерерасчетКУL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kk-перерасчет-к-у",
+      "modelProjection": "ПерерасчетКУL"
+    }
+  ]
+}

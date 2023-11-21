@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kk-база-данных-л-с-e",
+  "editForm": "i-i-s-kk-база-данных-л-с-e",
+  "external": false,
+  "caption": "База данных ЛС",
+  "name": "IISKkБазаДанныхЛСL",
+  "className": "БазаДанныхЛСL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kk-база-данных-л-с",
+      "modelProjection": "БазаДанныхЛСL"
+    }
+  ]
+}

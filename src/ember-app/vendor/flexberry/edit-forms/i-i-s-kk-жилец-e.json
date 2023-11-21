@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Жилец",
+  "name": "IISKkЖилецE",
+  "className": "ЖилецE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kk-жилец",
+      "modelProjection": "ЖилецE"
+    }
+  ]
+}

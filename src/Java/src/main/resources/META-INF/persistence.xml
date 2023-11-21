@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistencehttp://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="Olingo4PG">
+        <class>Kk.model.Sotrudniki</class>
+        <class>Kk.model.TCHkvitancii</class>
+        <class>Kk.model.Tarif</class>
+        <class>Kk.model.Dolzhnosti</class>
+        <class>Kk.model.Kvitanciya</class>
+        <class>Kk.model.BazaDannyxLS</class>
+        <class>Kk.model.Organizaciya</class>
+        <class>Kk.model.TCHPereraschetaKU</class>
+        <class>Kk.model.PereraschetKU</class>
+        <class>Kk.model.ZHilec</class>
+        <class>Kk.model.FlexberryAdvLimit</class>
+        <class>Kk.model.NewPlatformFlexberryFlexberryUserSetting</class>
+        <class>Kk.model.NewPlatformFlexberryServicesLock</class>
+        <class>Kk.model.IISCaseberryLoggingObjectsApplicationLog</class>
+
+    </persistence-unit>
+</persistence>

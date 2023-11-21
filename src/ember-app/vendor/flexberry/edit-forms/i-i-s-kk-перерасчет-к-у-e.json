@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Перерасчет КУ",
+  "name": "IISKkПерерасчетКУE",
+  "className": "ПерерасчетКУE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kk-перерасчет-к-у",
+      "modelProjection": "ПерерасчетКУE"
+    }
+  ]
+}

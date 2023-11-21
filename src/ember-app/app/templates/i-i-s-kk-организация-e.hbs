@@ -1,0 +1,137 @@
+<h3 class="ui header">{{t "forms.i-i-s-kk-организация-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.iDорганизация
+      class=(if (v-get validationModel "iDорганизация" "isInvalid") "error")
+      label=(t "forms.i-i-s-kk-организация-e.iDорганизация-caption")
+      data-test-i-i-s-kk-организация-e-iDорганизация=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "iDорганизация" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.наименование
+      class=(if (v-get validationModel "наименование" "isInvalid") "error")
+      label=(t "forms.i-i-s-kk-организация-e.наименование-caption")
+      data-test-i-i-s-kk-организация-e-наименование=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "наименование" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.адрес
+      class=(if (v-get validationModel "адрес" "isInvalid") "error")
+      label=(t "forms.i-i-s-kk-организация-e.адрес-caption")
+      data-test-i-i-s-kk-организация-e-адрес=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "адрес" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.телефон
+      class=(if (v-get validationModel "телефон" "isInvalid") "error")
+      label=(t "forms.i-i-s-kk-организация-e.телефон-caption")
+      data-test-i-i-s-kk-организация-e-телефон=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "телефон" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.email
+      class=(if (v-get validationModel "email" "isInvalid") "error")
+      label=(t "forms.i-i-s-kk-организация-e.email-caption")
+      data-test-i-i-s-kk-организация-e-email=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "email" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.расчетныйСчет
+      class=(if (v-get validationModel "расчетныйСчет" "isInvalid") "error")
+      label=(t "forms.i-i-s-kk-организация-e.расчетныйСчет-caption")
+      data-test-i-i-s-kk-организация-e-расчетныйСчет=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "расчетныйСчет" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.банк
+      class=(if (v-get validationModel "банк" "isInvalid") "error")
+      label=(t "forms.i-i-s-kk-организация-e.банк-caption")
+      data-test-i-i-s-kk-организация-e-банк=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "банк" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.иНН
+      class=(if (v-get validationModel "иНН" "isInvalid") "error")
+      label=(t "forms.i-i-s-kk-организация-e.иНН-caption")
+      data-test-i-i-s-kk-организация-e-иНН=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "иНН" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.бИК
+      class=(if (v-get validationModel "бИК" "isInvalid") "error")
+      label=(t "forms.i-i-s-kk-организация-e.бИК-caption")
+      data-test-i-i-s-kk-организация-e-бИК=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "бИК" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.кПП
+      class=(if (v-get validationModel "кПП" "isInvalid") "error")
+      label=(t "forms.i-i-s-kk-организация-e.кПП-caption")
+      data-test-i-i-s-kk-организация-e-кПП=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "кПП" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.корреСчет
+      class=(if (v-get validationModel "корреСчет" "isInvalid") "error")
+      label=(t "forms.i-i-s-kk-организация-e.корреСчет-caption")
+      data-test-i-i-s-kk-организация-e-корреСчет=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "корреСчет" "message")}}
+  </div>
+</form>

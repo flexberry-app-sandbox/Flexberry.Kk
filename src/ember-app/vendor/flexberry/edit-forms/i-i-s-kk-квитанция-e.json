@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Квитанция",
+  "name": "IISKkКвитанцияE",
+  "className": "КвитанцияE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kk-квитанция",
+      "modelProjection": "КвитанцияE"
+    }
+  ]
+}

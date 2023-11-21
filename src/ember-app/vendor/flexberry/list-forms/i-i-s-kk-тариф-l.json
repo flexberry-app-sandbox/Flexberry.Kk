@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kk-тариф-e",
+  "editForm": "i-i-s-kk-тариф-e",
+  "external": false,
+  "caption": "Тариф",
+  "name": "IISKkТарифL",
+  "className": "ТарифL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kk-тариф",
+      "modelProjection": "ТарифL"
+    }
+  ]
+}

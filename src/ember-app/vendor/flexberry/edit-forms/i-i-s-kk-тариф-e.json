@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Тариф",
+  "name": "IISKkТарифE",
+  "className": "ТарифE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kk-тариф",
+      "modelProjection": "ТарифE"
+    }
+  ]
+}

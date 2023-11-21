@@ -1,0 +1,207 @@
+﻿{
+  "name": "IISKkПерерасчетКУ",
+  "modelName": "i-i-s-kk-перерасчет-к-у",
+  "className": "ПерерасчетКУ",
+  "nameSpace": "IIS.Kk",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "iDжильца",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "iDорганизация",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "iDсотрудника",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "датаНач",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "датаОкон",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "датаФорДок",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "днейПерер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "основПерер",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "часовПерер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "жилец",
+      "relatedTo": "i-i-s-kk-жилец",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "организация",
+      "relatedTo": "i-i-s-kk-организация",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудники",
+      "relatedTo": "i-i-s-kk-сотрудники",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "тЧПерерасчетаКУ",
+      "relatedTo": "i-i-s-kk-т-ч-перерасчета-к-у",
+      "inverse": "перерасчетКУ"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ПерерасчетКУE",
+      "modelName": "i-i-s-kk-перерасчет-к-у",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "iDжильца",
+          "caption": "I dжильца",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "iDорганизация",
+          "caption": "I dорганизация",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "iDсотрудника",
+          "caption": "I dсотрудника",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "ТЧПерерасчетаКУE",
+          "caption": "Т ч перерасчета КУ",
+          "name": "тЧПерерасчетаКУ",
+          "relatedTo": "i-i-s-kk-т-ч-перерасчета-к-у",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ПерерасчетКУL",
+      "modelName": "i-i-s-kk-перерасчет-к-у",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "iDжильца",
+          "caption": "I dжильца",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "iDорганизация",
+          "caption": "I dорганизация",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "iDсотрудника",
+          "caption": "I dсотрудника",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

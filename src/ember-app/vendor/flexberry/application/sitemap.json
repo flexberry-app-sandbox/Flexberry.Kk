@@ -1,0 +1,71 @@
+﻿{
+  "applicationCaption": "Kk",
+  "applicationTitle": "Kk",
+  "items": [
+    {
+      "link": null,
+      "menuName": "kk",
+      "caption": "Kk",
+      "title": "Kk",
+      "children": [
+        {
+          "link": "i-i-s-kk-сотрудники-l",
+          "menuName": null,
+          "caption": "Сотрудники",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kk-тариф-l",
+          "menuName": null,
+          "caption": "Тариф",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kk-должности-l",
+          "menuName": null,
+          "caption": "Должности",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kk-квитанция-l",
+          "menuName": null,
+          "caption": "Квитанция",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kk-база-данных-л-с-l",
+          "menuName": null,
+          "caption": "База данных ЛС",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kk-организация-l",
+          "menuName": null,
+          "caption": "Организация",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kk-перерасчет-к-у-l",
+          "menuName": null,
+          "caption": "Перерасчет КУ",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kk-жилец-l",
+          "menuName": null,
+          "caption": "Жилец",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

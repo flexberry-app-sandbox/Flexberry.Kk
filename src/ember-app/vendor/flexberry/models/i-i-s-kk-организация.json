@@ -1,0 +1,264 @@
+﻿{
+  "name": "IISKkОрганизация",
+  "modelName": "i-i-s-kk-организация",
+  "className": "Организация",
+  "nameSpace": "IIS.Kk",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "email",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "iDорганизация",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "адрес",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "банк",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "бИК",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "иНН",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "корреСчет",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "кПП",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "расчетныйСчет",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "телефон",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ОрганизацияE",
+      "modelName": "i-i-s-kk-организация",
+      "attrs": [
+        {
+          "name": "iDорганизация",
+          "caption": "I dорганизация",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "адрес",
+          "caption": "Адрес",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "телефон",
+          "caption": "Телефон",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "email",
+          "caption": "Email",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "расчетныйСчет",
+          "caption": "Расчетный счет",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "банк",
+          "caption": "Банк",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "иНН",
+          "caption": "ИНН",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "бИК",
+          "caption": "БИК",
+          "hidden": false,
+          "index": 8
+        },
+        {
+          "name": "кПП",
+          "caption": "КПП",
+          "hidden": false,
+          "index": 9
+        },
+        {
+          "name": "корреСчет",
+          "caption": "Корре счет",
+          "hidden": false,
+          "index": 10
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ОрганизацияL",
+      "modelName": "i-i-s-kk-организация",
+      "attrs": [
+        {
+          "name": "iDорганизация",
+          "caption": "I dорганизация",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "адрес",
+          "caption": "Адрес",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "телефон",
+          "caption": "Телефон",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "email",
+          "caption": "Email",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "расчетныйСчет",
+          "caption": "Расчетный счет",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "банк",
+          "caption": "Банк",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "иНН",
+          "caption": "ИНН",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "бИК",
+          "caption": "БИК",
+          "hidden": false,
+          "index": 8
+        },
+        {
+          "name": "кПП",
+          "caption": "КПП",
+          "hidden": false,
+          "index": 9
+        },
+        {
+          "name": "корреСчет",
+          "caption": "Корре счет",
+          "hidden": false,
+          "index": 10
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

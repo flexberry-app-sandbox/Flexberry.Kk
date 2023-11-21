@@ -1,0 +1,112 @@
+﻿{
+  "name": "IISKkТЧквитанции",
+  "modelName": "i-i-s-kk-т-чквитанции",
+  "className": "ТЧквитанции",
+  "nameSpace": "IIS.Kk",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "iDтарифа",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "всегоНачисЗаРП",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "итогоКОплЗаРП",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "объемКУ",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "размПлатЗаКУ",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "услуга",
+      "type": "i-i-s-kk-комм-услуги",
+      "flexberryType": "КоммУслуги",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "тариф",
+      "relatedTo": "i-i-s-kk-тариф",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "квитанция",
+      "relatedTo": "i-i-s-kk-квитанция",
+      "inverse": "тЧквитанции"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧквитанцииE",
+      "modelName": "i-i-s-kk-т-чквитанции",
+      "attrs": [
+        {
+          "name": "услуга",
+          "caption": "Услуга",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "объемКУ",
+          "caption": "Объем КУ",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "iDтарифа",
+          "caption": "I dтарифа",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
